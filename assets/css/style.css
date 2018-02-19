@@ -1,0 +1,43 @@
+body {
+    background-image: url("../images/TheaterMasks.jpg");
+}
+.game {
+    background-color: black;
+    margin: 30px;
+}
+.interactive {
+    padding: 25px;
+}
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+    padding: 25px;
+}
+h3 {
+    font-family: 'Bubblegum Sans', cursive;
+    color:#af4021;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+h4 {
+    font-family: 'Pompiere', cursive;
+    color: #ec7950;
+    text-align: center;
+    display: block;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+form {
+    font-family: 'Pompiere', cursive;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
