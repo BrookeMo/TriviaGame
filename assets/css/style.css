@@ -4,9 +4,22 @@ body {
 .game {
     background-color: black;
     margin: 30px;
+    padding-bottom: 20px;
 }
-.interactive {
+#start {
+    color:#ec7950;
+    font-family: 'Pompiere', cursive;
+    text-align: center;
+    display: block;
+    font-size: 35px; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+#interactive {
     padding: 25px;
+    display: none;
 }
 h1 {
     font-family: 'Luckiest Guy', cursive;
@@ -15,7 +28,8 @@ h1 {
     letter-spacing: 2px;
     text-align: center;
     display: block;
-    padding: 25px;
+    padding-top: 25px;
+    margin: 0;
 }
 h3 {
     font-family: 'Bubblegum Sans', cursive;
@@ -23,6 +37,7 @@ h3 {
     text-align: center;
     display: block;
     font-size: 30px;
+    margin-top: 0px;
 }
 h4 {
     font-family: 'Pompiere', cursive;
@@ -30,8 +45,8 @@ h4 {
     text-align: center;
     display: block;
     font-size: 35px;
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 0;
 }
 form {
     font-family: 'Pompiere', cursive;
@@ -40,4 +55,7 @@ form {
     display: block;
     font-size: 25px;
     margin-bottom: 35px;
+}
+#score {
+    display: none;
 }
