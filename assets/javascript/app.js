@@ -31,8 +31,19 @@ $(document).ready(function () {
         else {
         guessesIncorrect++;}
         }
+        $("correct").html('Correct Answers: ' + guessesCorrect);
+        $("incorrect").html('Incorrect Answers: ' + guessesIncorrect);
         console.log(guessesCorrect);
         console.log(guessesIncorrect);
+        var x = document.getElementById("score");
+        var y = document.getElementById("interactive");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "none";
+        }
     });
     
 });
