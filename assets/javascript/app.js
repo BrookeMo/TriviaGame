@@ -17,8 +17,31 @@ $(document).ready(function () {
         document.getElementById("countdowntimer").textContent = timeleft;
         if(timeleft <= 0)
             clearInterval(downloadTimer);
+        if(timeleft === 0){
+            var questionNames = ['city','school','country','relation','color','gang','band'];
+        for (i=0; i<questionNames.length; i++){
+        var question = $('input[name=' + questionNames[i] + ']:checked').val(); 
+        if (question === 'correct'){
+            guessesCorrect++;}
+        else {
+        guessesIncorrect++;}
+        }
+        $("#correct").html('Correct Answers: ' + guessesCorrect);
+        $("#incorrect").html('Incorrect Answers: ' + guessesIncorrect);
+        console.log(guessesCorrect);
+        console.log(guessesIncorrect);
+        var x = document.getElementById("score");
+        var y = document.getElementById("interactive");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "none";
+        }
+        }
         },1000);
-    })
+    });
     
 
     $("#submit").click(function(){
@@ -44,6 +67,5 @@ $(document).ready(function () {
             x.style.display = "block";
             y.style.display = "none";
         }
-    });
-    
+    });  
 });
