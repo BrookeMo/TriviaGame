@@ -31,8 +31,8 @@ $(document).ready(function () {
         else {
         guessesIncorrect++;}
         }
-        $("correct").html('Correct Answers: ' + guessesCorrect);
-        $("incorrect").html('Incorrect Answers: ' + guessesIncorrect);
+        $("#correct").html('Correct Answers: ' + guessesCorrect);
+        $("#incorrect").html('Incorrect Answers: ' + guessesIncorrect);
         console.log(guessesCorrect);
         console.log(guessesIncorrect);
         var x = document.getElementById("score");
